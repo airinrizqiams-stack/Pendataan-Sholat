@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #66eaa6, #d278ed);
+}
+
+.app {
+  max-width: 380px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.header {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #8296f4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: red;
+}
+
+.search {
+  margin-top: 10px;
+}
+
+.rekap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.box {
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.sholat-box {
+  background: #38a451;
+}
+
+.tidak-box {
+  background: #e1c50e;
+}
+
+.haid-box {
+  background: #f61225;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background: white;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hapus {
+  margin-top: 10px;
+  background: black;
+}
+
+.hapus:hover {
+  background: #333;
+}

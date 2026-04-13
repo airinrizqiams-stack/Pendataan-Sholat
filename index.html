@@ -1,71 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Pendataan Sholat Siswa/Siswi</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="app">
-      <div class="header">
-        <h2>Pendataan Sholat</h2>
-        <p>Siswa/Siswi</p>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <title>Pendataan Sholat Siswi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <div class="card">
-        <input
-          type="text"
-          id="nama"
-          class="nama-input"
-          placeholder="Nama Siswa/Siswi"
-        />
+<div class="app">
 
-        <select id="sholat">
-          <option>Subuh</option>
-          <option>Dzuhur</option>
-          <option>Ashar</option>
-          <option>Maghrib</option>
-          <option>Isya</option>
-        </select>
+  <div class="header">
+    <h2>Pendataan Sholat</h2>
+    <p>Siswa/Siswi</p>
+  </div>
 
-        <select id="status">
-          <option value="sholat">Sholat</option>
-          <option value="tidak">Tidak</option>
-          <option value="haid">Haid</option>
-        </select>
+  <div class="card">
+    <input type="text" id="nama" placeholder="Nama Siswa/Siswi">
 
-        <button onclick="tambahData()">Tambah Data</button>
-      </div>
+    <select id="sholat">
+      <option>Subuh</option>
+      <option>Dzuhur</option>
+      <option>Ashar</option>
+      <option>Maghrib</option>
+      <option>Isya</option>
+    </select>
 
-      <input
-        class="search"
-        type="text"
-        id="search"
-        placeholder="Cari nama..."
-        onkeyup="searchData()"
-      />
+    <select id="status">
+      <option value="sholat">Sholat</option>
+      <option value="tidak">Tidak</option>
+      <option value="haid">Haid</option>
+    </select>
 
-      <div class="rekap">
-        <div class="box sholat-box">
-          <p>Sholat</p>
-          <h3 id="sholatCount"></h3>
-        </div>
-        <div class="box tidak-box">
-          <p>Tidak</p>
-          <h3 id="tidakCount"></h3>
-        </div>
-        <div class="box haid-box">
-          <p>Haid</p>
-          <h3 id="haidCount"></h3>
-        </div>
-      </div>
+    <button onclick="tambahData()">Tambah Data</button>
+  </div>
 
-      <ul id="list"></ul>
+  <input class="search" type="text" id="search" placeholder="Cari nama..." onkeyup="searchData()">
 
-      <button class="hapus" onclick="hapusSemua()">Hapus Semua</button>
+  <div class="rekap">
+    <div class="box sholat-box">
+      <p>Sholat</p>
+      <h3 id="sholatCount">0</h3>
     </div>
+    <div class="box tidak-box">
+      <p>Tidak</p>
+      <h3 id="tidakCount">0</h3>
+    </div>
+    <div class="box haid-box">
+      <p>Haid</p>
+      <h3 id="haidCount">0</h3>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script src="script.js"></script>
-  </body>
+  <ul id="list"></ul>
+
+  <button class="hapus" onclick="hapusSemua()">🧹 Hapus Semua</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>

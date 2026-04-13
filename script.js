@@ -10,12 +10,11 @@ function render(filteredData = data) {
 
   filteredData.forEach((item, index) => {
     let li = document.createElement("li");
-    li.classList.add(item.status);
 
     li.innerHTML = `
       ${item.nama} - ${item.sholat} (${item.status}) <br>
       <small>${item.tanggal}</small>
-      <button class="hapus-btn" onclick="hapus(${index})">Hapus</button>
+      <button onclick="hapus(${index})">Hapus</button>
     `;
 
     list.appendChild(li);
